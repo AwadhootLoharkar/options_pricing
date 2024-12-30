@@ -1,0 +1,25 @@
+# Changes to Variables for Different Outputs
+
+## Ticker Symbol
+- Change the `ticker` variable to the desired stock symbol (e.g., "AAPL" for Apple, "AMZN" for Amazon).
+
+## Date Range
+- Modify the `start_date` and `end_date` variables to set the desired date range for fetching stock data.
+
+## General Parameters for Option Pricing
+- `S0`: Initial stock price. This is fetched from the stock data. Ensure the stock data is correctly fetched for accurate `S0`.
+- `K`: Strike price. Adjust the multiplier (e.g., `1.05`) to set the strike price relative to the current stock price.
+- `k`: Log strike price. This is derived from `K`.
+- `r`: Risk-free interest rate. Change this value to reflect the current or expected risk-free rate.
+- `q`: Dividend yield. Adjust this value based on the expected dividend yield of the stock.
+- `T`: Time to maturity. Modify this value to set the option's time to maturity (e.g., `0.5` for 6 months).
+
+## FFT Parameters
+- `n`: Exponent for 2^n. Change this value to adjust the number of steps in the FFT calculation.
+- `N`: Number of steps. This is derived from `n`.
+- `eta`: Integration step size. Adjust this value to change the precision of the numerical integration.
+- `alpha`: Damping factor. Modify this value to affect the smoothness of the FFT-generated option price curve.
+- `lambda_`: Log-strike step size. This is derived from `N` and `eta`.
+- `beta`: Log-strike value. This is derived from `K`.
+
+By adjusting these variables, you can tailor the option pricing model to different scenarios and requirements.
