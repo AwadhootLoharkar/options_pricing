@@ -23,7 +23,6 @@ The approach leverages FFT's computational efficiency to quickly evaluate Europe
 1. Clone the repository:
     ```sh
     git clone https://github.com/AwadhootLoharkar/options_pricing.git
-    cd option-pricing-fourier-transform
     ```
 
 2. Install the required dependencies:
